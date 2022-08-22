@@ -1,24 +1,24 @@
 
-% ============== Part 1: Entering ratings for a new user ===============
-%  Before we will train the collaborative filtering model, we will first
-%  add ratings that correspond to a new user that we just observed. This
-%  part of the code will also allow you to put in your own ratings for the
-%  movies in our dataset!
+
+
+
+
+
 %
 movieList = loadMovieList();
 
 %  Initialize my ratings
 my_ratings = zeros(1682, 1);
 
-% Check the file movie_idx.txt for id of each movie in our dataset
-% For example, Toy Story (1995) has ID 1, so to rate it "4", you can set
+
+
 my_ratings(1) = 4;
 
-% Or suppose did not enjoy Silence of the Lambs (1991), you can set
+
 my_ratings(98) = 2;
 
-% We have selected a few movies we liked / did not like and the ratings we
-% gave are as follows:
+
+
 my_ratings(7) = 3;
 my_ratings(12)= 5;
 my_ratings(54) = 4;
@@ -39,8 +39,8 @@ end
 
 
 % ================== Part 2: Learning Movie Ratings ====================
-%  Now, you will train the collaborative filtering model on a movie rating 
-%  dataset of 1682 movies and 943 users
+%  Now, train the collaborative filtering model on a movie rating 
+%  dataset of 1682 movies
 %
 
 fprintf('\nTraining collaborative filtering...\n');
